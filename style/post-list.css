@@ -1,0 +1,25 @@
+.post-list {
+  padding: 20px 0 50px;
+}
+
+.post-list__title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.post-list__items {
+  --grid-count: 4;
+  --grid-column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    var(--grid-count),
+    calc(
+      (100% / var(--grid-count)) -
+        (var(--grid-column-gap) * (var(--grid-count) - 1) / var(--grid-count))
+    )
+  );
+  gap: 40px var(--grid-column-gap);
+  padding-top: 40px;
+  border-top: 1px solid #e6e6e6;
+}
