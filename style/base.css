@@ -118,18 +118,6 @@ iframe {
   margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
-  .container {
-    --container-width: 942px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    --container-width: 624px;
-  }
-}
-
 @media (max-width: 470px) {
   .container {
     --container-offset: 11px;

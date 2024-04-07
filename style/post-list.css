@@ -4,8 +4,6 @@
 
 .post-list__title {
   --container-width: 1140px;
-  --container-offset: 30px;
-  --max-width: calc(var(--container-width) + var(--container-offset) * 2);
   font-size: 26px;
   font-weight: 700;
   padding-left: calc((100% - var(--container-width)) / 2);
@@ -38,5 +36,27 @@
     --container-offset: 30px;
     max-width: calc(var(--container-width) + var(--container-offset) * 2);
     padding: 0 var(--container-offset) 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-list__items {
+    --grid-count: 2;
+  }
+}
+
+@media (max-width: 470px) {
+  .post-list {
+    padding-bottom: 20px;
+  }
+
+  .post-list__items {
+    --grid-count: 1;
+    row-gap: 20px;
+    padding-top: 20px;
+  }
+
+  .post-list__title {
+    --container-offset: 11px;
   }
 }
