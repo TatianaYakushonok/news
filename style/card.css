@@ -5,6 +5,11 @@
   gap: 10px;
 }
 
+.card__img {
+  height: 200px;
+  object-fit: cover;
+}
+
 .card__link {
   display: flex;
   justify-content: space-between;
@@ -39,8 +44,16 @@
   gap: 10px;
 }
 
+.card__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .card__info {
   display: flex;
+  align-items: flex-end;
   gap: 12px;
   font-size: 10px;
   color: #8e8e8e;
@@ -48,6 +61,11 @@
 
 .card__author {
   width: 100%;
-  display: flex;
+  display: -webkit-box;
+  align-items: flex-end;
   justify-content: flex-end;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: right;
 }
