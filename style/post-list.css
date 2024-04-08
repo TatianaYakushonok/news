@@ -1,5 +1,6 @@
 .post-list {
   padding: 20px 0 50px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .post-list__title {
@@ -39,7 +40,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .post-list__items {
     --grid-count: 2;
   }

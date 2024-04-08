@@ -1,7 +1,6 @@
-import { createArticles } from './createArticles.js';
-import { postList } from './const.js';
+import { createArticles } from './createElements.js';
 
-export const renderArticles = (err, data) => {
+export const renderArticles = async (err, data) => {
   if (err) {
     console.warn(err, data);
     const h2 = document.createElement('p');
@@ -11,10 +10,8 @@ export const renderArticles = (err, data) => {
     return;
   }
 
-  postList.innerHTML = '';
   const slicedArray = data.articles.slice(0, 8);
   const articles = slicedArray.map(createArticles);
-  postList.append(...articles);
 
-  return postList;
+  return articles;
 };

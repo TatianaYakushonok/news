@@ -1,3 +1,25 @@
+import { main } from './const.js';
+
+export const createSection = (title) => {
+  const section = document.createElement('section');
+  const sectionTitle = document.createElement('h2');
+  const container = document.createElement('div');
+  const postItems = document.createElement('ul');
+
+  section.classList.add('post-list');
+  sectionTitle.classList.add('post-list__title');
+  container.classList.add('container');
+  postItems.classList.add('post-list__items');
+
+  sectionTitle.textContent = title;
+
+  section.append(sectionTitle, container);
+  container.append(postItems);
+  main.append(section);
+
+  return postItems;
+};
+
 export const createArticles = ({
   urlToImage,
   title,

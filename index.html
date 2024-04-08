@@ -22,30 +22,31 @@
       </svg>
 
       <form class="header__search-form search-form">
-        <input class="search-form__input" type="search"
+        <input class="search-form__input" type="search" name="search"
           placeholder="Я хочу узнать про...">
         <button class="search-form__btn" type="submit">
           <svg class="search-form__icon">
             <use xlink:href="./img/sprite.svg#search"></use>
           </svg>
         </button>
-        <select class="search-form__select" name="" id="">
-          <option value="Россия">Россия</option>
-          <option value="США">США</option>
-          <option value="Франция">Франция</option>
+        <select class="search-form__select" name="country" id="country">
+          <option value="ru">Россия</option>
+          <option value="us">США</option>
+          <option value="fr">Франция</option>
+          <option value="de">Германия</option>
         </select>
       </form>
     </div>
   </header>
 
   <main class="main">
-    <section class="post-list">
+    <!--<section class="post-list">
       <h2 class="post-list__title">Свежие новости</h2>
 
       <div class="container">
         <ul class="post-list__items"></ul>
       </div>
-    </section>
+    </section>-->
   </main>
 
   <footer class="footer">
