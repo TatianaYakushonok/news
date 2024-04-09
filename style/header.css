@@ -38,6 +38,14 @@
 }
 
 .search-form__input::placeholder {
+  transition: color 0.3s ease-in-out;
+}
+
+.search-form__input:focus::placeholder {
+  color: transparent;
+}
+
+.search-form__input::placeholder {
   color: #212121;
 }
 
