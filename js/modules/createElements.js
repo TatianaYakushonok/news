@@ -26,6 +26,7 @@ export const createArticles = ({
   description,
   publishedAt,
   author,
+  url,
 }) => {
   const img = urlToImage !== null ? urlToImage : '../../img/cover.jpg';
   const dateData = new Date(publishedAt).toLocaleDateString('en-US');
@@ -42,7 +43,7 @@ export const createArticles = ({
       <div class="card__img-container">
         <img class="card__img" src="${img}" alt="Превью новости ${title}">
       </div>
-      <a class="card__link" href="article.html">
+      <a class="card__link" href="${url}" target="_blank">
         <h3 class="card__title">
           ${title}
         </h3>
